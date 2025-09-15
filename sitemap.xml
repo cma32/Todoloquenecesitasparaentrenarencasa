@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Página principal -->
+  <url>
+    <loc>https://cma32.github.io/Todoloquenecesitasparaentrenarencasa/</loc>
+    <lastmod>2025-09-15</lastmod>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Ejemplo de otra página (si tienes más, agrega aquí las URLs) -->
+  <!--
+  <url>
+    <loc>https://cma32.github.io/Todoloquenecesitasparaentrenarencasa/ejercicios.html</loc>
+    <lastmod>2025-09-15</lastmod>
+    <priority>0.8</priority>
+  </url>
+  -->
+
+</urlset>
