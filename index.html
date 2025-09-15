@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TODO LO QUE NECESITAS PARA ENTRENAR EN CASA</title>
+  <style>
+    :root{
+      --bg:#06070b; --card:#0f1220; --muted:#9aa4b2; --accent1:#00f2fe; --accent2:#7d2ae8;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,'Poppins',Segoe UI,Roboto,Arial;background:linear-gradient(180deg,#05060a 0%,#0b0f17 100%);color:#e6eef6}
+    .wrap{max-width:1200px;margin:28px auto;padding:18px}
+    header{display:flex;justify-content:center;align-items:center;padding:28px 12px}
+    h1.site-title{font-size:40px;margin:0;text-align:center;font-weight:800;letter-spacing:0.6px;color:#fff;text-shadow:0 6px 18px rgba(125,42,232,0.12)}
+
+    /* animated intro */
+    .intro{max-width:1000px;margin:20px auto 6px;padding:18px 14px;text-align:center;color:var(--muted);opacity:0;transform:translateY(12px);animation:introIn 700ms ease-out 200ms forwards}
+    @keyframes introIn{to{opacity:1;transform:none}}
+
+    .intro .lead{font-size:18px;color:#d9e8ef;margin-bottom:10px}
+    .intro .sub{font-size:15px;color:var(--muted);margin:0}
+
+    /* products grid */
+    #productos{margin-top:20px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:18px}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.03);padding:12px;border-radius:12px;transition:transform .28s ease,box-shadow .28s ease;overflow:hidden}
+    .card:hover{transform:translateY(-8px);box-shadow:0 10px 40px rgba(125,42,232,0.12)}
+    .card img{width:100%;height:180px;object-fit:cover;border-radius:8px;transition:transform .4s ease}
+    .card:hover img{transform:scale(1.04)}
+    .card h3{font-size:16px;margin:10px 0 6px}
+    .card p{margin:0;color:var(--muted);font-size:14px}
+    .price-row{display:flex;justify-content:space-between;align-items:center;margin-top:10px}
+    .price{font-weight:800;color:#fff}
+
+    .btn{background:linear-gradient(90deg,var(--accent1),var(--accent2));border:none;padding:9px 12px;border-radius:10px;color:#021124;font-weight:800;cursor:pointer;transition:box-shadow .25s ease}
+    .btn:hover{box-shadow:0 6px 24px rgba(125,42,232,0.25)}
+
+    footer{margin-top:28px;padding:18px;text-align:center;color:var(--muted);font-size:13px}
+
+    /* responsive tweaks */
+    @media (max-width:720px){
+      h1.site-title{font-size:28px}
+      .intro{padding:12px}
+      .card img{height:160px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1 class="site-title">TODO LO QUE NECESITAS PARA ENTRENAR EN CASA</h1>
+    </header>
+
+    <section class="intro">
+      <div class="lead">Equipa tu gimnasio en casa</div>
+      <div class="sub">Accesorios y equipos seleccionados para entrenar fuerza, cardio y movilidad sin salir de casa. Productos fiables, al mejor precio y listos para tu rutina.</div>
+    </section>
+
+    <main id="productos">
+      <div class="grid">
+        <!-- PRODUCTOS ANTIGUOS -->
+        <article class="card">
+          <img src="https://m.media-amazon.com/images/I/61-lh6gQyxL._AC_SX679_.jpg" alt="Banco de Pesas Ajustable">
+          <h3>Set de Bandas de Resistencia</h3>
+          <p>Bandas elásticas de diferentes resistencias para fitness, yoga y cross training.</p>
+          <div class="price-row">
+            <div class="price">5,53 €</div>
+            <button class="btn" onclick="window.open('https://www.amazon.es/dp/B0DHVDQV3P?tag=dcproductstor-21','_blank')">Comprar</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://m.media-amazon.com/images/I/61qo0-G3qRL._AC_SX466_.jpg" alt="Mancuernas Ajustables">
+          <h3>TRX de Entrenamiento</h3>
+          <p>Correas de entrenamiento : resistentes, ajustables, portátiles y versátiles para entrenamientos de cuerpo completo en cualquier lugar.</p>
+          <div class="price-row">
+            <div class="price">26,99 €</div>
+            <button class="btn" onclick="window.open('https://www.amazon.es/dp/B097C4CDQ6?tag=dcproductstor-21','_blank')">Comprar</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://m.media-amazon.com/images/I/61ZCijZiyDL._AC_SY450_.jpg" alt="Set de Bandas de Resistencia">
+          <h3>Cuerda Elástica Multifunción</h3>
+          <p>Recibe un set de bandas de resistencia y pedales multifuncionales, ligeros, duraderos y portátiles, ideales para yoga, pilates y entrenamiento de fuerza en cualquier lugar.</p>
+          <div class="price-row">
+            <div class="price">14,99 €</div>
+            <button class="btn" onclick="window.open('https://www.amazon.es/dp/B0F66X7NVR?tag=dcproductstor-21','_blank')">Comprar</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://m.media-amazon.com/images/I/81HTfyxSJkL._AC_SY450_.jpg" alt="Kettlebell de Peso Ajustable">
+          <h3>Entrenamiento Boxeo Set Completo - Bandas Elásticas con Cinturón Boxeo</h3>
+          <p>Sistema de entrenamiento elástico portátil y ajustable para mejorar fuerza, velocidad, agilidad y resistencia en múltiples disciplinas deportivas.</p>
+          <div class="price-row">
+            <div class="price">14,99 €</div>
+            <button class="btn" onclick="window.open('https://www.amazon.es/dp/B0B7WWJ4B3?tag=dcproductstor-21','_blank')">Comprar</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://m.media-amazon.com/images/I/51xJjtKEELS._AC_SY450_.jpg" alt="Esterilla de Yoga Antideslizante">
+          <h3>Equipo de entrenamiento 3 en 1 multifuncional y duradero</h3>
+          <p>Kit 3 en 1 (Tummy Trimmer, Hand Gripper y Chest Expander) resistente, portátil y eficaz para tonificar todo el cuerpo en distintos entrenamientos.</p>
+          <div class="price-row">
+            <div class="price">18,99 €</div>
+            <button class="btn" onclick="window.open('https://www.amazon.es/dp/B07C5JKDY2?tag=dcproductstor-21','_blank')">Comprar</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://m.media-amazon.com/images/I/71Siv2KT5jL._AC_SX679_.jpg" alt="Barra de Dominadas para Puerta">
+          <h3>Mancuernas Ajustables</h3>
+          <p>Juego de mancuernas ajustables, ideal para entrenar con diferentes niveles de peso.</p>
+          <div class="price-row">
+            <div class="price">39,99 €</div>
+            <button class="btn" onclick="window.open('https://www.amazon.es/dp/B07GSVQGKF?tag=dcproductstor-21','_blank')">Comprar</button>
+          </div>
+        </article>
+
+        <!-- PRODUCTOS NUEVOS -->
+        <article class="card">
+          <img src="https://m.media-amazon.com/images/I/61MOFqV8hXL._AC_SY450_.jpg" alt="Kettlebell Ajustable">
+          <h3>Kettlebell Ajustable HXD ERGO</h3>
+          <p>Kettlebell de aluminio ajustable, ahorro de espacio y versatilidad.</p>
+          <div class="price-row">
+            <div class="price">129,99 €</div>
+            <button class="btn" onclick="window.open('https://amzn.to/3VN8oVM','_blank')">Comprar</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://m.media-amazon.com/images/I/81p7JCEk3pS._AC_SY450_.jpg" alt="Banco Multifuncional">
+          <h3>Push Up Rack Board</h3>
+          <p>Tabla de flexiones multifuncional, antideslizante y portátil que protege las muñecas y permite entrenar todo el cuerpo en casa de forma segura y eficaz.</p>
+          <div class="price-row">
+            <div class="price">36,99 €</div>
+            <button class="btn" onclick="window.open('https://amzn.to/4mix97o','_blank')">Comprar</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://m.media-amazon.com/images/I/71zQnlexR9L._AC_SY450_.jpg" alt="Hand Grip FitBeast">
+          <h3>Hand Grip FitBeast</h3>
+          <p>Fortalece antebrazos y manos con este set ajustable.</p>
+          <div class="price-row">
+            <div class="price">18,99 €</div>
+            <button class="btn" onclick="window.open('https://amzn.to/42sZYqr','_blank')">Comprar</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://m.media-amazon.com/images/I/61mpDxlNt2L._AC_SY450_.jpg" alt="Soporte Flexiones">
+          <h3>Soporte de Flexiones Flintronic</h3>
+          <p>Soportes antideslizantes para entrenamiento de flexiones.</p>
+          <div class="price-row">
+            <div class="price">9,27 €</div>
+            <button class="btn" onclick="window.open('https://amzn.to/4n2LuWu','_blank')">Comprar</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://m.media-amazon.com/images/I/51au8u7m5WL._AC_SY450_.jpg" alt="Esterilla Gimnasio">
+          <h3>Esterilla Antideslizante</h3>
+          <p>Esterilla de alta densidad para yoga, pilates y ejercicios de suelo.</p>
+          <div class="price-row">
+            <div class="price">14,95 €</div>
+            <button class="btn" onclick="window.open('https://amzn.to/42fpdN5','_blank')">Comprar</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://m.media-amazon.com/images/I/713eeDjpPfL._AC_SY450_.jpg" alt="Cinta de Correr MERACH">
+          <h3>Máquina Elíptica Eléctrica</h3>
+          <p>Máquina elíptica compacta, segura y silenciosa con modos auto/manual, pantalla digital y pedales antideslizantes, ideal para mayores, rehabilitación y uso en oficina o casa.</p>
+          <div class="price-row">
+            <div class="price">169,99 €</div>
+            <button class="btn" onclick="window.open('https://amzn.to/4gn6JQl','_blank')">Comprar</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://m.media-amazon.com/images/I/51pPbHFed8L._AC_SX679_.jpg" alt="Barra de Dominadas Mobiclinic">
+          <h3>Barra Multifuncional Mobiclinic</h3>
+          <p>Barra de dominadas resistente y ajustable para entrenamientos completos.</p>
+          <div class="price-row">
+            <div class="price">87,36 €</div>
+            <button class="btn" onclick="window.open('https://amzn.to/4pjHR05','_blank')">Comprar</button>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 TODO LO QUE NECESITAS PARA ENTRENAR EN CASA. Todos los derechos reservados.</p>
+    </footer>
+  </div>
+</body>
+</html>
