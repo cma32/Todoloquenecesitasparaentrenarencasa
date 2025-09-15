@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://cma32.github.io/Todoloquenecesitasparaentrenarencasa/sitemap.xml
